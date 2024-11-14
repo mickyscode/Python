@@ -1,0 +1,10 @@
+word=input("please enter a word ")
+f=open("File1.txt","r")
+s=f.read()
+a=s.count(word)
+b=s.count(" ")
+print(a)
+print(b)
+f.close()
+
+print(s)

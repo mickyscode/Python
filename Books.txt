@@ -1,0 +1,7 @@
+001, To Kill a Mockingbird, Harper Lee, True
+002, 1984, George Orwell, True
+003, The Great Gatsby, F. Scott Fitzgerald, False
+004, Moby Dick, Herman Melville, True
+005, Pride and Prejudice, Jane Austen, False
+006, The Catcher in the Rye, J.D. Salinger, True
+007, The Lord of the Rings, J.R.R. Tolkien, True
