@@ -11,12 +11,13 @@ def load_books():
         bookdict[Id]={"title":Name,"author":Author,"available":Available}
     for i,j in bookdict.items():
         print(i,j)
-    if bookdict["001"]["available"].strip()=="True":
-        print("Book is available")
-    else:
-        print("Not available >;3")
-
-
+    return bookdict
+#   if bookdict["001"]["available"].strip()=="True":
+#       print("Book is available")
+#   else:
+#        print("Not available >;3")
+#
+#
 def load_userRecord():
     userdict = {}
     fp = open("userRecord.txt", "r")
@@ -30,10 +31,21 @@ def load_userRecord():
         userdict[userID] = {"bookId": bookId, "BorrowDate": BorrowDate, "DueDate": DueDate}
     for i,j in userdict.items():
         print(i,j)
-
+    return userdict
+bookdict={}
+def add_book(bookdict):
+    id=input("Please enter book id")
+    title=input("Please enter book title")
+    author=input("Please enter book author")
+    available="True"
+    bookdict[id]={"title":title,"author":author,"available":available}
+    print(bookdict)
+=
 
 
 #main code
-load_books()
-load_userRecord()
-
+books=load_books()
+print(books)
+records=load_userRecord()
+print(records)
+add_book(books)
